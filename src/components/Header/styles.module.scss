@@ -53,4 +53,13 @@
   button {
     margin-left: auto;
   }
+
+  @media screen and (max-width: 500px) {
+    nav,
+    button {
+      display: none;
+    }
+
+    justify-content: center;
+  }
 }

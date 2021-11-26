@@ -7,6 +7,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    img {
+      display: none;
+    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .hero {
@@ -41,5 +50,20 @@
 
   button {
     margin-top: 2.5rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+
+    button {
+      display: block;
+      margin: 1.5rem auto;
+    }
   }
 }
